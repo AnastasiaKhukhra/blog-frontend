@@ -1,17 +1,15 @@
 import React from 'react';
 import PostList from '../components/PostList';
-import { Container, Typography, Box } from '@mui/material';
+import Layout from '../components/Layout';
 
 const HomePage = () => {
   return (
-    <Container>
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h3" gutterBottom>
-          Blog Application
-        </Typography>
-        <PostList />
-      </Box>
-    </Container>
+    <Layout 
+      title="Education Blog" 
+      showCreateButton={true}
+    >
+      <PostList />
+    </Layout>
   );
 };
 
